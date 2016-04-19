@@ -6,7 +6,7 @@ import (
 	"github.com/nats-io/nats"
 )
 
-func sendMessage(URL string) error {
+func SendMessage(URL string) error {
 
 	nc, err := nats.Connect(URL)
 	if err != nil {
